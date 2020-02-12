@@ -69,7 +69,7 @@ prod_similares = prod_sim.split()                                      #todos os
 #print(prod_similares)
 
 for i in range(len(prod_similares)-1):
-  pos_similares.append(ASIN_list.index(prod_similares[i+1]) )          #localização dos produtos
+  pos_similares.append(ASIN_list.index(prod_similares[i+1])-1)          #localização dos produtos
 
 for i in range(len(pos_similares)):
   if(int(sales_list[pos_similares[i]].split()[1]) < int(sales_list[pos].split()[1]) ):
